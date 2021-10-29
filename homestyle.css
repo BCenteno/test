@@ -59,12 +59,15 @@ body {
   width: 100%;
   text-align: center;
   min-width: 480px;
-  background-color: lightpink;
+  background-color: rgb(201, 189, 175);
   height: 100vh;
   font-family: "Zen Kaku Gothic New", sans-serif;
-  font-style: oblique;
   font-size: 350%;
   padding: 60px;
+  background-image: url(./recursos/background3.png);
+    padding-left: ;
+  background-size: cover;
+  background-position-x: center;
 }
 
 .box5 {
@@ -135,7 +138,7 @@ body {
   .box5,
   .box6 {
     width: 100vh;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
   }
 
@@ -147,8 +150,8 @@ body {
   }
 
   .logofront {
-    max-width: 75%;
-    padding-top: 40vh;
+    max-width: 90%;
+    padding-top: 50vh;
   }
 
   .container {
@@ -158,52 +161,76 @@ body {
   .box1 {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px;
+    padding-left: 50px;
   }
 
   .box2 {
-    flex-wrap: wrap;
-    justify-content: center;
     font-family: "Zen Kaku Gothic New", sans-serif;
-    font-size: 80%;
     text-align: left;
-    padding: 10px;
+    padding-left: 60px;
+    padding-right: 0px;
     padding-top: 0px;
   }
 
+  h1{
+    height: 10%;  
+    font-size: 80%;
+    width: 100vh;
+    padding-left: 30px;
+  }
+
+  p{
+      width: 97%;
+      padding-top: 40px;
+      font-size: 17px;
+      text-align: right;
+      padding-left: 30px;
+  }
+
   .box3 {
-    justify-content: space-around;
-    display: flex;
     padding: 0px;
     padding-top: 80px;
-    line-height: 80vh;
-    padding-left: 40px;
+    padding-left: 50px;
   }
 
   .box4 {
-    width: 100%;
-    text-align: center;
+      
+    padding-top: 0;
     min-width: 480px;
-    font-size: 100%;
+    font-size: 95%;
+    color: rgb(255, 255, 255);
+    background-image: url(./recursos/background2.png);
+    padding-left: ;
+  background-size: cover;
+  background-position-x: center;
   }
 
   .macaronbox {
-    max-width: 100%;
+    max-width: 105%;
     padding-top: 0vh;
   }
 
   .macbox {
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
     display: flex;
-    padding: 0px;
-    padding-top: 100px;
+    flex-wrap: wrap;
+    width: 115%;
     bottom: 0px;
     line-height: 0vh;
-    align-items: center;
+    
+    padding-top: 0vh;
   }
-
+.pbox2{
+    padding-top: 20px;
+    width: 115%;
+    text-align: right;
+    font-size: 47%;
+    padding-left: 10px;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-top: 10px;
+}
   .grow img {
-    width: 20vh;
+    width: 16vh;
   }
 }
