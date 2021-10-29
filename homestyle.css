@@ -1,19 +1,10 @@
-@media (max-width: 480px) {
-    .box2, .box3, .box5, .box6 {
-      width: 100vh;
-      height: 50vh;
-
-     
-    }
-
-    .box1,.box4 {
-        height: 100vh;
-    }
-  }
-
 * {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -31,21 +22,31 @@
   min-width: 480px;
   background-color: lightblue;
   height: 100vh;
+  background-image: url(./recursos/background.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .box2 {
-  width: 50%;
+  width: 60%;
   text-align: center;
   min-width: 480px;
-  background-color: lightcoral;
+  background-color: #dbcdf0;
   height: 100vh;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 250%;
+  text-align: left;
+  padding: 10px;
+  padding-top: 0px;
 }
 
 .box3 {
-  width: 50%;
+  width: 40%;
   text-align: center;
   min-width: 480px;
-  background-color: lightgoldenrodyellow;
+  background-color: #dbcdf0;
   height: 100vh;
 }
 
@@ -55,10 +56,14 @@
   min-width: 480px;
   background-color: lightpink;
   height: 100vh;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-style: oblique;
+  font-size: 350%;
+  padding: 60px;
 }
 
 .box5 {
-  width: 50%;
+  width: 40%;
   text-align: center;
   min-width: 480px;
   background-color: lime;
@@ -66,11 +71,110 @@
 }
 
 .box6 {
-  width: 50%;
+  width: 60%;
   text-align: center;
   min-width: 480px;
   background-color: mediumpurple;
   height: 100vh;
 }
 
+.logofront {
+  max-width: 80%;
+  padding-top: 25vh;
+  animation: up-down 3s infinite ease-in-out alternate;
+}
 
+.macaronbox {
+  max-width: 100%;
+  padding-top: 25vh;
+  animation: up-down 3s infinite ease-in-out alternate;
+}
+
+.grow img {
+  transition: 1s ease;
+  width: 27vh;
+}
+
+.grow img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+.macbox {
+  justify-content: space-around;
+
+  display: flex;
+  padding: 100px;
+  bottom: 0px;
+  line-height: 80vh;
+}
+
+@keyframes up-down {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-20px);
+  }
+}
+
+/* BREAKPOINT MOBILE*/
+
+@media (max-width: 600px) {
+  .box2,
+  .box3,
+  .box5,
+  .box6 {
+    width: 100vh;
+    height: 50vh;
+  }
+
+  .box1,
+  .box4 {
+    height: 100vh;
+  }
+
+  .logofront {
+    max-width: 100%;
+    padding-top: 40vh;
+  }
+
+  .box2 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 130%;
+    text-align: left;
+    padding: 10px;
+    padding-top: 0px;
+  }
+
+  .box4 {
+    width: 100%;
+    text-align: center;
+    min-width: 480px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 196%;
+  }
+
+  .macaronbox {
+    max-width: 100%;
+    padding-top: 0vh;
+  }
+
+  .macbox {
+      
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    padding: 0px;
+    padding-top: 100px;
+    bottom: 0px;
+    line-height: 0vh;
+    align-items: center;
+  }
+
+  .grow img {
+    width: 20vh;
+  }
+}
