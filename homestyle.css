@@ -133,7 +133,8 @@ body {
 
   .box1,
   .box4 {
-    height: 100vh;
+    height: 117vh;
+    width: 100vh;
   }
 
   .logofront {
@@ -141,20 +142,45 @@ body {
     padding-top: 40vh;
   }
 
+  .container{
+      
+  padding-left: 90px;
+  padding-right: 50px;
+  }
+
+.box1{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 45px;
+    padding-top: 35px;
+}
+
   .box2 {
+    flex-wrap: wrap;
+    justify-content: center;
     font-family: "Zen Kaku Gothic New", sans-serif;
-    font-size: 130%;
+    font-size: 104%;
     text-align: left;
     padding: 10px;
+    padding-left: 60px;
     padding-top: 0px;
+  }
+
+  .box3{
+    justify-content: space-around;
+    display: flex;
+    padding: 0px;
+    padding-top: 80px;
+    line-height: 80vh;
+    padding-left: 40px;
   }
 
   .box4 {
     width: 100%;
     text-align: center;
     min-width: 480px;
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    font-size: 196%;
+    font-size: 200%;
+    padding-left: 95px;
   }
 
   .macaronbox {
