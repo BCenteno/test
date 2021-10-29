@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-
-  outline: 1px solid #f00 !important;
 }
 
 body {
@@ -65,7 +63,6 @@ body {
   font-size: 350%;
   padding: 60px;
   background-image: url(./recursos/background3.png);
-    padding-left: ;
   background-size: cover;
   background-position-x: center;
 }
@@ -172,19 +169,19 @@ body {
     padding-top: 0px;
   }
 
-  h1{
-    height: 10%;  
+  h1 {
+    height: 10%;
     font-size: 80%;
     width: 100vh;
     padding-left: 30px;
   }
 
-  p{
-      width: 97%;
-      padding-top: 40px;
-      font-size: 17px;
-      text-align: right;
-      padding-left: 30px;
+  p {
+    width: 97%;
+    padding-top: 40px;
+    font-size: 17px;
+    text-align: right;
+    padding-left: 30px;
   }
 
   .box3 {
@@ -194,15 +191,14 @@ body {
   }
 
   .box4 {
-      
     padding-top: 0;
     min-width: 480px;
     font-size: 95%;
     color: rgb(255, 255, 255);
     background-image: url(./recursos/background2.png);
-    padding-left: ;
-  background-size: cover;
-  background-position-x: center;
+
+    background-size: cover;
+    background-position-x: center;
   }
 
   .macaronbox {
@@ -217,10 +213,10 @@ body {
     width: 115%;
     bottom: 0px;
     line-height: 0vh;
-    
+
     padding-top: 0vh;
   }
-.pbox2{
+  .pbox2 {
     padding-top: 20px;
     width: 115%;
     text-align: right;
@@ -229,7 +225,7 @@ body {
     font-weight: bold;
     padding-right: 10px;
     padding-top: 10px;
-}
+  }
   .grow img {
     width: 16vh;
   }
